@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link href="assets/bootstrap-5/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="mx-auto mt-5" style="max-width: 800px">
+                <div class="header text-center mb-3">
+                    <h2>To Do List</h2>
+                </div>
+                <div class="input-group mb-3 mt-3 gap-2">
+                    <input type="text" class="form-control" style="border-radius: 5px; color: white;" placeholder="Enter Your Name"
+                        id="username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                    <button class="btn text-white btn-primary" style="border-radius: 5px" type="button" id="adduser">
+                        Add User
+                    </button>
+                </div>
+
+                <div class="display">
+                    <table class="table table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col">No.</t>
+                                <th scope="col">Name</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="display-records">
+                            <!-- <tr>
+                                <th scope="row">1</th>
+                                <td>javascript</td>
+                                <td><i class="btn text-white btn-primary bi bi-pencil-square mx-1"></i><i class="btn text-white btn-success bi bi-trash-fill"></i></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
